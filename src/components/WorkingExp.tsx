@@ -1,5 +1,5 @@
 import { Experience } from "./Experience";
-import db from "../../public/database.jpg";
+import db from "../../public/database.png";
 import sophia from "../../public/sophiaplatanisioti.webp";
 import bf from "../../public/buzzyfester.jpg";
 import { font } from "@/lib/font";

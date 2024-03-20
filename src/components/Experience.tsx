@@ -30,14 +30,14 @@ export const Experience: FC<ExperienceProps> = ({
         freelancing ? "bg-background" : "bg-background"
       )}
     >
-      <div className="p-3 bg-primaryColor rounded-full w-[50px] h-[50px] max-w-[50px] max-h-[50px] flex items-center justify-center">
+      <div className="p-3 bg-primaryColor rounded-full w-[50px] h-[50px] flex items-center justify-center">
         <Image
           placeholder="blur"
           alt={name}
           src={image}
-          width={40}
-          height={40}
-          className="object-fill rounded-full w-full h-full"
+          width={50}
+          height={50}
+          className="object-fill min-w-[50px] min-h-[50px] rounded-full w-full h-full"
         />
       </div>
       <div className="flex-1">

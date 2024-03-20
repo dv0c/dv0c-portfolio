@@ -1,4 +1,5 @@
 import Me from "@/components/Me";
+import WhatIDo from "@/components/WhatIDo";
 import WorkingExp from "@/components/WorkingExp";
 import { Button } from "@/components/ui/button";
 
@@ -22,6 +23,9 @@ export default function Home() {
           <div className="border-t pt-3">
             <WorkingExp />
           </div>
+        <div className="border-t pt-3">
+          <WhatIDo />
+        </div>
         </div>
       </section>
     </main>

@@ -16,7 +16,7 @@ const Me = () => {
           I'm Anastasios Meintanis
         </h2>
         <p className="text-lg max-w-[320px] text-center sm:text-left">
-          I'm a software engineer, currently working at &apos;
+          I'm a software engineer, currently working at{" "}
           <a href="https://www.data-base.gr/">Data Base</a>.
         </p>
       </div>

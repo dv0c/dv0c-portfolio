@@ -7,10 +7,12 @@ export default function Home() {
   return (
     <main className="">
       <section className="flex flex-wrap justify-between max-w-7xl mx-auto mt-10 gap-10">
-        <Me />
+        <div className="relative mx-auto">
+          <Me />
+        </div>
         <div className="max-w-lg space-y-20 mx-auto">
           <div className="space-y-5 lg:block text-center flex justify-center flex-col items-center lg:text-left">
-            <p className="text-4xl max-w-md">
+            <p className="font-medium text-2xl sm:text-3xl md:text-4xl max-w-md">
               Passionate creating great experience for Digital Product
             </p>
             <div className="space-x-3">

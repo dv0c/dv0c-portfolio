@@ -2,7 +2,7 @@ import Image from "next/image";
 import me from "../../public/me.jpg";
 const Me = () => {
   return (
-    <div className="mx-auto lg:block flex items-center justify-center flex-col">
+    <div className="mx-auto lg:block sticky top-10 flex items-center justify-center flex-col">
       <Image
         alt="dv0c"
         placeholder="blur"

@@ -6,7 +6,7 @@ const Header = () => {
     <header className="py-10">
       <div className="flex items-center justify-between">
         <section className="flex items-center gap-10">
-          <Button className="p-2" variant={"ghost"}>
+          <Button className="p-2" variant={"ghost"} aria-label="Menu - for mobile only">
             <Menu className="block md:hidden" />
           </Button>
           <h1 className="text-xl font-semibold">Anastasios</h1>

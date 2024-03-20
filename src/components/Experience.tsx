@@ -27,7 +27,7 @@ export const Experience: FC<ExperienceProps> = ({
       target="_blank"
       className={cn(
         "rounded-full flex items-center gap-5 border-2 p-5",
-        freelancing ? "bg-green-200/50" : "bg-background"
+        freelancing ? "bg-background" : "bg-background"
       )}
     >
       <div className="p-3 bg-primaryColor rounded-full w-[50px] h-[50px] max-w-[50px] max-h-[50px] flex items-center justify-center">

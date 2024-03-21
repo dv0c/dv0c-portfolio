@@ -41,10 +41,12 @@ export const Experience: FC<ExperienceProps> = ({
         />
       </div>
       <div className="flex-1">
-        <h4 className="text-sm">{name}</h4>
-        <p className="font-semibold text-stone-800 text-sm">{description}</p>
+        <h4 className="text-xs sm:text-sm">{name}</h4>
+        <p className="font-semibold text-stone-800 text-xs sm:text-sm">
+          {description}
+        </p>
       </div>
-      <p className="text-sm text-muted-foreground">
+      <p className="sm:text-sm text-muted-foreground text-xs">
         {date ? date : "Freelancing"}
       </p>
     </Link>

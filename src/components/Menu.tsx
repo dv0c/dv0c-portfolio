@@ -12,7 +12,7 @@ export const Menu = () => {
   return (
     <Sheet>
       <SheetTrigger>
-        <MenuIcon />
+        <MenuIcon type="button" />
       </SheetTrigger>
       <SheetContent
         side={"left"}

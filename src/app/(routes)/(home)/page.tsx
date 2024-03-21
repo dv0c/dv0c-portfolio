@@ -1,4 +1,5 @@
 import Me from "@/components/Me";
+import SelectedWork from "@/components/SelectedWork";
 import WhatIDo from "@/components/WhatIDo";
 import WorkingExp from "@/components/WorkingExp";
 import { Button } from "@/components/ui/button";
@@ -25,6 +26,9 @@ export default function Home() {
           </div>
           <div className="border-t pt-3">
             <WhatIDo />
+          </div>
+          <div className="border-t pt-3">
+            <SelectedWork />
           </div>
         </div>
       </section>

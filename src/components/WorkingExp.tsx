@@ -1,7 +1,7 @@
 import { Experience } from "./Experience";
 import db from "../../public/database.png";
 import sophia from "../../public/sophiaplatanisioti.webp";
-import bf from "../../public/buzzyfester.jpg";
+import bf from "../../public/buzzyfester.webp";
 import { font } from "@/lib/font";
 
 const WorkingExp = () => {

@@ -1,29 +1,38 @@
-import { Menu } from "lucide-react";
+import { Menu } from "./Menu";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <header className="py-10">
       <div className="flex items-center justify-between">
         <section className="flex items-center gap-10">
-          <Button className="p-2" variant={"ghost"} aria-label="Menu - for mobile only">
-            <Menu className="block md:hidden" />
-          </Button>
-          <h1 className="text-xl font-semibold">Anastasios</h1>
+          <Menu />
+          <Link href={"/"}>
+            <h1 className="text-xl font-semibold">Anastasios</h1>
+          </Link>
           <ul className="hidden md:flex items-center">
             <li>
-              <Button variant={"link"}>Services</Button>
+              <Link href="/services">
+                <Button variant={"link"}>Services</Button>
+              </Link>
             </li>
             <li>
-              <Button variant={"link"}>About me</Button>
+              <Link href={"/about-me"}>
+                <Button variant={"link"}>About me</Button>
+              </Link>
             </li>
             <li>
-              <Button variant={"link"}>Contact us</Button>
+              <Link href={"/contact"}>
+                <Button variant={"link"}>Contact us</Button>
+              </Link>
             </li>
           </ul>
         </section>
         <section>
-          <Button variant={"outline"}>See my work</Button>
+          <Link href={"/my-work"}>
+            <Button variant={"outline"}>See my work</Button>
+          </Link>
         </section>
       </div>
     </header>

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <section className="flex flex-wrap justify-between max-w-7xl mx-auto mt-10 gap-10">
         <div className="relative mx-auto">
           <Me />

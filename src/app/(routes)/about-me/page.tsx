@@ -1,9 +1,9 @@
 
+import { Service } from "@/components/Service";
 import { font } from "@/lib/font";
+import { Circle, ImageIcon } from "lucide-react";
 import Image from "next/image";
 import me from "../../../../public/me.jpg";
-import { Service } from "@/components/Service";
-import { Circle, Dot, School, Shield } from "lucide-react";
 
 const page = ({ }) => {
   return (
@@ -42,11 +42,14 @@ const page = ({ }) => {
             >
               My learning journey
             </h3>
-            <div className="items-center gap-5 flex">
-              <Service name="Started learning Angular" description="2018 - 2019" svg={<Circle />} />
-              <Service name="Started learning React" description="2019" svg={<Circle />} />
-              <Service name="Started learning React" description="2019 - Present" svg={<Circle />} />
+            <div className="items-center gap-5  flex">
+              <Service name="Learning Angular" description="2018 - 2019" svg={<Circle />} />
+              <Service name="Learning React" description="2019" svg={<Circle />} />
+              <Service name="Learning React" description="2019 - Present" svg={<Circle />} />
             </div>
+          </section>
+          <section>
+            <KeepInMind />
           </section>
         </div>
       </div>
@@ -55,3 +58,30 @@ const page = ({ }) => {
 };
 
 export default page;
+
+
+const KeepInMind = () => {
+  return (
+    <div className="mt-10 pt-10 border-t">
+      <h3
+        className={"font-medium text-2xl text-center w-full text-stone-800 mt-3 mb-5 " + font.className}
+      >
+        Crafting Exceptional User Experiences
+      </h3>
+      <p className="text-lg text-center leading-relaxed">
+        Crafting a website that seamlessly blends speed, responsiveness, and SEO optimization is paramount in delivering an exceptional user experience. With a commitment to efficiency without unnecessary cost escalation, I ensure each project is meticulously tailored to achieve these goals. Through image optimization techniques and judicious use of content delivery networks (CDNs), I minimize load times while maximizing content quality. Implementation of lazy loading and Gzip compression further enhances performance, ensuring swift delivery of content to users worldwide. Responsive design principles are at the core of my approach, guaranteeing that websites adapt flawlessly to any screen size or device. Adherence to SEO best practices, such as strategic keyword placement and fast loading times, bolsters visibility and search engine rankings. Moreover, prioritizing accessibility and browser caching ensures inclusivity and smooth browsing experiences for all users. Continuous performance monitoring enables fine-tuning and optimization, ensuring sustained excellence in user satisfaction and engagement.
+      </p>
+      {/* <h1 className={"text-lg font-semibold my-5 text-center " + font.className}>How can we achive this</h1>
+      <div className="flex items-center gap-3 flex-wrap">
+        <Service name="Optimized Image Assets" description="" svg={<ImageIcon />} />
+        <Service name="Efficient Content Delivery Networks (CDNs)" description="" svg={<ImageIcon />} />
+        <Service name="Implementation of Lazy Loading and Gzip Compression" description="" svg={<ImageIcon />} />
+        <Service name="Responsive Design Principles" description="" svg={<ImageIcon />} />
+        <Service name="SEO Best Practices for Enhanced Visibility" description="" svg={<ImageIcon />} />
+        <Service name="Emphasis on Accessibility and Browser Caching" description="" svg={<ImageIcon />} />
+        <Service name="Ongoing Performance Monitoring and Optimization" description="" svg={<ImageIcon />} />
+      </div> */}
+    </div>
+  );
+};
+

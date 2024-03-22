@@ -61,12 +61,12 @@ const page = ({}) => {
             </h3>
             <div className="items-center gap-5 flex-wrap md:flex-nowrap flex">
               <Service
-                name="Learning Angular"
+                name="Learned Angular"
                 description="2018 - 2019"
                 svg={<Circle />}
               />
               <Service
-                name="Learning React"
+                name="Learned React"
                 description="2019"
                 svg={<Circle />}
               />

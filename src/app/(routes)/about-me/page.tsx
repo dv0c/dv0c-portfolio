@@ -15,7 +15,7 @@ const page = ({}) => {
             src={me}
             width={200}
             height={200}
-            className="rounded-2xl"
+            className="rounded-full"
           />
           <div className="mt-5 space-y-3 flex flex-col justify-center items-center">
             <h2 className="text-2xl font-semibold text-center ">

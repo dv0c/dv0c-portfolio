@@ -11,7 +11,7 @@ const Header = () => {
             <Menu />
           </div>
           <Link href={"/"}>
-            <h1 className="text-xl font-semibold">Anastasios</h1>
+            <h1 className="text-xl font-semibold">Meindesk</h1>
           </Link>
           <ul className="hidden md:flex items-center">
             <li>

@@ -12,7 +12,7 @@ export const Service: FC<ServiceProp> = ({ description, name, svg }) => {
   return (
     <div
       className={cn(
-        "rounded-2xl flex items-center gap-5 border-2 p-5 bg-background"
+        "rounded-2xl w-full flex items-center gap-5 border-2 p-5 bg-background"
       )}
     >
       <div className="p-3 bg-primaryColor rounded-full w-[50px] h-[50px] max-w-[50px] max-h-[50px] flex items-center justify-center">

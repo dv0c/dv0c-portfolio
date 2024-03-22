@@ -3,6 +3,7 @@ import SelectedWork from "@/components/SelectedWork";
 import WhatIDo from "@/components/WhatIDo";
 import WorkingExp from "@/components/WorkingExp";
 import { Button } from "@/components/ui/button";
+import { font } from "@/lib/font";
 
 export default function Home() {
   return (
@@ -13,7 +14,12 @@ export default function Home() {
         </div>
         <div className="max-w-lg space-y-20 mx-auto">
           <div className="space-y-5 lg:block text-center flex justify-center flex-col items-center lg:text-left">
-            <p className="font-medium text-2xl sm:text-3xl md:text-4xl max-w-md">
+            <p
+              className={
+                "font-medium text-2xl sm:text-3xl md:text-4xl max-w-md " +
+                font.className
+              }
+            >
               Passionate creating great experience for Digital Product
             </p>
             <div className="space-x-3">

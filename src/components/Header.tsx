@@ -6,8 +6,8 @@ const Header = () => {
   return (
     <header className="py-10">
       <div className="flex items-center justify-between">
-        <section className="flex items-center gap-10">
-          <div className="md:hidden block">
+        <section className="flex items-center gap-7">
+          <div className="md:hidden items-center flex">
             <Menu />
           </div>
           <Link href={"/"}>

@@ -14,6 +14,7 @@ export const Card: FC<CardProps> = ({ description, href, image, title }) => {
   return (
     <Link
       href={href}
+      target="_blank"
       type="button"
       className="border bg-background rounded-2xl p-5 group"
     >

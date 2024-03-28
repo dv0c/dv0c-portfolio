@@ -1,9 +1,6 @@
+import { SelectedWorkList } from "@/lib/config";
 import { font } from "@/lib/font";
 import { Card } from "./Card";
-import DataBase from '../../public/database_homepage.png';
-import plat from '../../public/sophiaplatanisioti_homepage.png';
-import buzzyfester from '../../public/buzzyfester_app.jpg';
-import notion from '../../public/notion_homepage.png';
 const SelectedWork = () => {
     return (
         <section className="space-y-5">
@@ -13,10 +10,19 @@ const SelectedWork = () => {
                 Selected works
             </h3>
             <div className="space-y-3">
-                <Card href="https://data-base.gr/" image={DataBase} title="Data Base" description="This exploration showcases the homepage of the website, featuring sections designed to provide users with a clear understanding..." />
-                <Card href="https://sophiaplatanisioti.gr/" image={plat} title="Sophia Platanisioti" description="This exploration showcases the homepage of the website, featuring sections designed to provide users with a clear understanding..." />
-                <Card href="https://notion-clone-dv0c.vercel.app/" image={notion} title="Notion clone" description="This exploration showcases the homepage of the website, featuring sections designed to provide users with a clear understanding..." />
-                <Card href="#" image={buzzyfester} title="Buzzy Fester" description="This exploration showcases the homepage of the website, featuring sections designed to provide users with a clear understanding..." />
+                {
+                    SelectedWorkList.map((work, index) => {
+                        return (
+                            <Card
+                                key={index}
+                                title={work.title}
+                                description={work.description}
+                                image={work.image}
+                                href={work.href}
+                            />
+                        );
+                    })
+                }
             </div>
         </section>
     );

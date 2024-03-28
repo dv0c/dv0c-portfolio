@@ -1,7 +1,12 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
 <loc>https://www.meindesk.gr/</loc>
-<lastmod>2024-3-27T17:55:40.157Z</lastmod>
-<priority>1</priority>
+<lastmod>2024-03-28T07:11:44+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://www.meindesk.gr/about-me</loc>
+<lastmod>2024-03-28T07:11:44+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 </urlset>
